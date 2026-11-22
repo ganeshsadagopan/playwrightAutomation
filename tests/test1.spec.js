@@ -9,7 +9,7 @@ test.only('launch browser',async ({browser})=>{
     await page.waitForTimeout(10000); // keep open for 10 seconds
     console.log(await page.title());
     await expect(page).toHaveTitle('Google');
- 
+    // except is equal to assert in selenium
     });
 
     // launch browser with page
